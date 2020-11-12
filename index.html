@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
 <head>
 	<title>Our Love Story</title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -12,91 +13,209 @@
 	<link href="css/default.css" type="text/css" rel="stylesheet">
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/garden.js"></script>
-    <script type="text/javascript" src="js/functions.js"></script>
+	<script type="text/javascript" src="js/functions.js"></script>
+	<script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
+
 </head>
 
+<script>
+
+	function playBGM() {
+		var audio = document.getElementById('bgm');
+		console.log(audio)
+		audio.play();
+		console.log('click')
+
+		var tag = document.getElementById('musicClick');
+		tag.parentNode.removeChild(tag);
+
+	}
+
+
+</script>
+
+
 <body>
-	<div id="mainDiv">
-		<div id="content">
-			<div id="code">
-				<span class="comments">/**</span><br />
-				<span class="space"/><span class="comments">* We are both Fudan SSers and programmers,</span><br />
-				<span class="space"/><span class="comments">* so I write some code to celebrate our 1st anniversary.</span><br />
-				<span class="space"/><span class="comments">*/</span><br />
-				Boy i = <span class="keyword">new</span> Boy(<span class="string">"hackerzhou"</span>);<br />
-				Girl u = <span class="keyword">new</span> Girl(<span class="string">"MaryNee"</span>);<br />
-				<span class="comments">// Nov 2, 2010, I told you I love you. </span><br />
-				i.love(u);<br />
-				<span class="comments">// Luckily, you accepted and became my girlfriend eversince.</span><br />
-				u.accepted();<br />
-				<span class="comments">// Since then, I miss u every day.</span><br />
-				i.miss(u);<br />
-				<span class="comments">// And take care of u and our love.</span><br />
-				i.takeCareOf(u);<br />
-				<span class="comments">// You say that you won't be so easy to marry me.</span><br />
-				<span class="comments">// So I keep waiting and I have confidence that you will.</span><br />
-				<span class="keyword">boolean</span> isHesitate = <span class="keyword">true</span>;<br />
-				<span class="keyword">while</span> (isHesitate) {<br />
-				<span class="placeholder"/>i.waitFor(u);<br />
-				<span class="placeholder"/><span class="comments">// I think it is an important decision</span><br />
-				<span class="placeholder"/><span class="comments">// and you should think it over.</span><br />
-				<span class="placeholder"/>isHesitate = u.thinkOver();<br />
-				}<br />
-				<span class="comments">// After a romantic wedding, we will live happily ever after.</span><br />
-				i.marry(u);<br />
-				i.liveHappilyWith(u);<br />
-			</div>
-			<div id="loveHeart">
-				<canvas id="garden"></canvas>
-				<div id="words">
-					<div id="messages">
-						Minyue, I have fallen in love with you for
-						<div id="elapseClock"></div>
-					</div>
-					<div id="loveu">
-						Love u forever and ever.<br/>
-						<div class="signature">- hackerzhou</div>
+	<div class="container">
+
+		<!-- bgm and backgroung -->
+		<audio id="bgm" src='./bgm.mp3' controls loop hidden></audio>
+
+		<script type="text/javascript">
+
+			$.backstretch([
+				"./img/img1.jpg",
+				"./img/img2.jpg",
+				"./img/img3.jpg",
+				"./img/img4.png",
+				"./img/img5.jpg",
+				"./img/img6.jpg",
+				"./img/img7.jpg",
+				"./img/img8.jpg",
+				"./img/img9.jpg",
+				"./img/img10.jpg",
+				"./img/img11.jpg",
+				"./img/img12.jpg",
+				"./img/img13.jpg",
+				"./img/img14.jpg",
+				"./img/img15.jpg",
+				"./img/img16.jpg",
+				"./img/img18.jpg",
+				"./img/img19.jpg",
+				"./img/img20.jpg",
+				"./img/img21.jpg",
+				"./img/img22.jpg",
+				"./img/img23.jpg",
+				"./img/img24.jpg",
+				"./img/img25.jpg",
+				"./img/img26.jpg",
+				"./img/img27.jpg",
+				"./img/img28.jpg",
+				"./img/img29.jpg",
+				"./img/img30.jpg",
+				"./img/img31.jpg",
+				"./img/img32.jpg",
+				"./img/img33.jpg",
+				"./img/img34.jpg",
+				"./img/img35.jpg",
+				"./img/img36.jpg",
+				"./img/img37.jpg",
+				"./img/img38.jpg",
+				"./img/img39.jpg",
+				"./img/img40.jpg",
+			], {
+				fade: 1000, // 動畫時長
+				duration: 2000 // 切換延時
+			});
+		</script>
+		<style>
+			.backstretch {
+				opacity: .3;
+			}
+		</style>
+
+		<div id="mainDiv">
+			<a id='musicClick' onclick='playBGM()'> 點我有音樂喔！！ </a>
+
+			<div id="content">
+
+				<div id="code" style="margin-top:70 px">
+
+					<span class="comments">/**</span><br />
+
+					<span class="space" /><span class="comments">* Ula 給你ㄍ驚喜～這個網站看起來很漂亮ㄅ </span><br />
+					<span class="space" /><span class="comments">* 因為這是我從網路上找別人的樣板來改的 哈哈 我美術天分不夠 </span><br />
+					<span class="space" /><span class="comments">*/</span><br />
+					帥哥 hongyun = <span class="keyword">new</span> Boy(<span class="string">"宏昀"</span>);<br />
+					87 ula = <span class="keyword">new</span> Girl(<span class="string">"ula"</span>);<br />
+					<span class="comments">// 7月26, 2020, 我們在一起了（雖然妳以前討厭我😯). </span><br />
+					hongyun love ula～ ula love me!!<br />
+					<span class="comments">// 你常常會問我為什麼喜歡你.</span><br />
+					因為阿 妳又呆呆又可愛又很貼心 講話也很智障🥰<br />
+					而且跟你相處起來真的很開心很自在<br />
+					謝謝你在很多時候都有給我鼓勵 我推甄研究所的時候真的有時候會很煩<br />
+					但都還好有你在我旁邊 精神支持 讓我能常常暫時忘記煩惱<br />
+
+					<span class="comments">// 我們在一起的時後大部分都很開心 也去過很多地方玩惹.</span><br />
+					一起去過宜蘭、九分、平溪、淡水、爬山看夜景、基隆吃夜市<br />
+					還有我們最愛的士林雞排😍<br />
+
+					我希望我們未來能夠探索更多地方！！ 在很多地方都留下我們的回憶喔～<br />
+
+					<span class="comments">// 我希望未來我們能一起變得更好 感情也更好(也變瘦)</span><br />
+					你常常說我讓你很認真 但其實你也有相對激勵到我喔 <br />
+					你會很常早起 讓我覺得自己也不能耍廢 <br />
+					送你這個禮物的時候不知道你的比賽比完了沒 <br />
+					希望你一切順利～～ 不管是比賽還是專題都要加油喔 我也會加油ㄉ <br />
+					我們真的都有變好 未來也要繼續保持～ <br />
+					<span class="comments">// 我猜我會在聖誕節或是更早的時候就把這個驚喜送給你</span><br />
+
+					你看到這個的時候我應該也知道我研究所讀哪裡了(我寫的時候不知道) <br />
+					雖然我們都不太喜歡遠距離 但希望之後的時間我們要努力加油<br />
+					當然如果你看到的時候我只上台科就很好笑惹😅<br />
+
+					總之因為我不太擅長寫卡片 你不懂我的藝術 怕你看不懂歐～～<br />
+					我的創意也就僅限這樣了 哈哈 我怕以後做不出更好的東西 所以不要太期待我唷<br />
+					所以就花一點時間 做<s>參考</s>一個小小der網頁來給你驚喜！！<br />
+
+					<span class="comments">// 希望你會喜歡～ 愛你ㄉ維尼<br /></span><br />
+
+
+
+
+
+					<!-- <span class="comments">// 雖然我們都不太喜歡遠距離 但希望之後的時間我們要努力加油</span><br />
+					<span class="comments">// 當然如果你看到的時候我只上台科就很好笑惹😅</span><br /> -->
+					<!-- <span class="keyword">boolean</span> isHesitate = <span class="keyword">true</span>;<br />
+					<span class="keyword">while</span> (isHesitate) {<br />
+					<span class="placeholder" />i.waitFor(u);<br />
+					<span class="placeholder" /><span class="comments">// I think it is an important
+						decision</span><br />
+					<span class="placeholder" /><span class="comments">// and you should think it over.</span><br />
+					<span class="placeholder" />isHesitate = u.thinkOver();<br />
+					}<br />
+					<span class="comments">// After a romantic wedding, we will live happily ever after.</span><br />
+					i.marry(u);<br />
+					i.liveHappilyWith(u);<br /> -->
+				</div>
+				<div id="loveHeart">
+					<canvas id="garden"></canvas>
+					<div id="words">
+						<div id="messages">
+							Ula～～偶們在一起了 
+							<div id="elapseClock"></div>
+						</div>
+						<div id="loveu">
+							I Love u la <s>呆腦獸</s>.<br />
+
+							<div class="signature">- 好帥的宏昀</div>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div id="copyright">
+			<!-- <div id="copyright">
 			Inspired by <a href="http://www.openrise.com/lab/FlowerPower/">FlowerPower</a> project.<br />
 			Copyright © 2011 <a href='http://hackerzhou.me'>hackerzhou.me</a> 2009-2011
+		</div> -->
 		</div>
-	</div>
-	<script type="text/javascript">
-		var offsetX = $("#loveHeart").width() / 2;
-		var offsetY = $("#loveHeart").height() / 2 - 55;
-		var together = new Date();
-		together.setFullYear(2010, 10, 2);
-		together.setHours(20);
-		together.setMinutes(0);
-		together.setSeconds(0);
-		together.setMilliseconds(0);
-		
-		if (!document.createElement('canvas').getContext) {
-			var msg = document.createElement("div");
-			msg.id = "errorMsg";
-			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
-			document.body.appendChild(msg);
-			$("#code").css("display", "none")
-			$("#copyright").css("position", "absolute");
-			$("#copyright").css("bottom", "10px");
-		    document.execCommand("stop");
-		} else {
-			setTimeout(function () {
-				startHeartAnimation();
-			}, 5000);
+		<script type="text/javascript">
 
-			timeElapse(together);
-			setInterval(function () {
+
+
+			var offsetX = $("#loveHeart").width() / 2;
+			var offsetY = $("#loveHeart").height() / 2 - 55;
+			var together = new Date();
+			together.setFullYear(2020, 6, 26);
+
+			together.setHours(15);
+			together.setMinutes(0);
+			together.setSeconds(0);
+			together.setMilliseconds(0);
+
+			if (!document.createElement('canvas').getContext) {
+				var msg = document.createElement("div");
+				msg.id = "errorMsg";
+				msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+				document.body.appendChild(msg);
+				$("#code").css("display", "none")
+				$("#copyright").css("position", "absolute");
+				$("#copyright").css("bottom", "10px");
+				document.execCommand("stop");
+			} else {
+				setTimeout(function () {
+					startHeartAnimation();
+				}, 5000);
+
 				timeElapse(together);
-			}, 500);
+				setInterval(function () {
+					timeElapse(together);
+				}, 500);
 
-			adjustCodePosition();
-			$("#code").typewriter();
-		}
-	</script>
+				adjustCodePosition();
+				$("#code").typewriter();
+			}
+		</script>
+	</div>
 </body>
+
 </html>
